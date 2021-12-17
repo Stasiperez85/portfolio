@@ -1,3 +1,49 @@
-header {
-    color: blue;
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
 }
+header {
+    padding: 20px 35px;
+    background-color: plum;
+}
+
+header h1 {
+    font-weight: bold;
+    font-size: 36px;
+    color:  purple;
+    margin: 0;
+    display: inline;
+}
+
+header a {
+    color: purple;
+}
+
+footer {
+    background-color: plum;
+}
+
+footer h3 {
+    color: purple;
+    margin: 0;
+}
+
+header a {
+    text-decoration: none;
+    color: purple;
+}
+
+header nav {
+    float: right;
+    margin: 7px 0;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li a {
+    margin: 0 30px;
+    font-weight: lighter;
+    font-size: 22px;
+  }
