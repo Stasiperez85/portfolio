@@ -1,3 +1,9 @@
+:root {
+    --primary-color: #7400b8;
+    --secondary-color: #80ffdb;
+    --tertiary-color: #5390d9;
+  }
+
 * {
     margin: 0;
     padding: 0;
@@ -9,7 +15,7 @@ body {
 }
 header {
     padding: 20px 35px;
-    background-color: plum;
+    background-color: var(--secondary-color);
 }
 
 /* Header / Nave bar styles start */
@@ -17,18 +23,18 @@ header {
 header h1 {
     font-weight: bold;
     font-size: 36px;
-    color:  purple;
+    color: var(--primary-color);
     margin: 0;
     display: inline;
 }
 
 header a {
-    color: purple;
+    color: primary-color;
 }
 
 header a {
     text-decoration: none;
-    color: purple;
+    color: var(--primary-color);
 }
 
 header nav {
@@ -45,3 +51,23 @@ header nav ul li a {
     font-weight: lighter;
     font-size: 22px;
   }
+
+/* Hero Style Start*/
+.hero {
+background-image: url("../Profile.jpeg");
+width: 100vw;
+height: 35vh;
+background-size: cover;
+background-position: center center; 
+background-repeat: no-repeat;
+background-attachment: fixed;
+}
+
+  /* body */
+  .primary {
+      text-align: left;
+      font-size: 35px;
+      color: var(--primary-color);
+  }
+
+
