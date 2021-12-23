@@ -1,24 +1,20 @@
 :root {
-    --primary-color: #7400b8;
+    --primary-color: #5390d9;
     --secondary-color: #80ffdb;
-    --tertiary-color: #5390d9;
+    --tertiary-color: #7400b8;
   }
 
-* {
+/* * {
     margin: 0;
     padding: 0;
-}
+} */
 
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: white;
-}
+/* Header / Nave bar styles start */
+
 header {
     padding: 20px 35px;
     background-color: var(--secondary-color);
 }
-
-/* Header / Nave bar styles start */
 
 header h1 {
     font-weight: bold;
@@ -64,10 +60,50 @@ background-attachment: fixed;
 }
 
   /* body */
+
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+}
+
   .primary {
-      text-align: left;
-      font-size: 35px;
-      color: var(--primary-color);
+    font-size: 48px;
+    color: var(--primary-color);
+    border-bottom: 3px solid;
+    padding-bottom: 20px;
+    text-align: center;
+    margin: 0 auto 35px auto;
+    width: 50%;
   }
+
+/* About me */
+.intro p {line-height: 1.7;
+  width: 80%;
+  margin: 0 auto 60px;
+  font-size: 20px;
+}
+
+.intro img {
+    width: 15%;
+    margin: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Work Section */
+.work1 img {
+    width: 800px;
+    height: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.work-text {
+    text-align: center;
+}
+
+
 
 
