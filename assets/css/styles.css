@@ -1,6 +1,6 @@
 :root {
     --primary-color: #5390d9;
-    --secondary-color: #80ffdb;
+    --secondary-color: #073b4c;
     --tertiary-color: #7400b8;
   }
 
@@ -19,23 +19,19 @@ header {
 header h1 {
     font-weight: bold;
     font-size: 36px;
-    color: var(--primary-color);
+    color: white;
     margin: 0;
     display: inline;
 }
 
 header a {
-    color: primary-color;
-}
-
-header a {
     text-decoration: none;
-    color: var(--primary-color);
+    color: white;
 }
 
 header nav {
     float: right;
-    margin: 7px 0;
+    margin: 0 0;
 }
 
 header nav ul li {
@@ -66,43 +62,103 @@ background-attachment: fixed;
     background-color: white;
 }
 
-  .primary {
-    font-size: 48px;
-    color: var(--primary-color);
-    border-bottom: 3px solid;
-    padding-bottom: 20px;
-    text-align: center;
-    margin: 0 auto 35px auto;
-    width: 50%;
-  }
-
-/* About me */
-.intro p {line-height: 1.7;
-  width: 80%;
-  margin: 0 auto 60px;
-  font-size: 20px;
+section {
+    display: flex;
+    align-items: center;
 }
 
-.intro img {
+.section h2{
+    font-size: 45px;
+    color: var(--primary-color);
+}
+
+  .section--title {
+      flex-basis: 20%;
+      text-align: right;
+      padding-right: 30px;
+      border-right: solid;
+  }
+
+
+/* About me */
+.section--info {
+align-items: center;
+ line-height: 1.7;
+  flex-basis: 75%;
+  font-size: 20px;
+  margin-left: 15px;
+  margin-top: 150px;
+}
+
+.section--info1 {
+    align-items: center;
+     line-height: 1.7;
+      flex-basis: 75%;
+      font-size: 20px;
+      margin-left: 25px;
+}
+
+.section--info ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+    margin-bottom: 150px;
+}
+
+.section img {
     width: 15%;
     margin: 50px;
     display: block;
-    margin-left: auto;
+    margin-left: 50px;
     margin-right: auto;
 }
 
 /* Work Section */
-.work1 img {
+.section--container__img-large {
+    background-image: url(../istock_65177049_medium.jpeg);
     width: 800px;
     height: 300px;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 210px;
+    margin-right: 40px;
+    position: relative;
 }
 
-.work-text {
-    text-align: center;
+.section--container__img-text {
+    position: absolute;
+    top: 75%;
+    left: 10%;
+    color: white;
 }
+
+.section--container__img2 {
+    background-image: url(../magic.jpeg);
+    width: 400px;
+    height: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.section--container__img3 {
+    background-image: url(../gift.jpeg);
+    width: 400px;
+    height: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.section--container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 100px;
+}
+
 
 
 
