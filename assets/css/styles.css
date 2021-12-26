@@ -1,7 +1,7 @@
 :root {
-    --primary-color: #5390d9;
+    --primary-color: #ffddd2;
     --secondary-color: #073b4c;
-    --tertiary-color: #7400b8;
+    --tertiary-color: white;
   }
 
 /* * {
@@ -19,14 +19,14 @@ header {
 header h1 {
     font-weight: bold;
     font-size: 36px;
-    color: white;
+    color: var(--tertiary-color);
     margin: 0;
     display: inline;
 }
 
 header a {
     text-decoration: none;
-    color: white;
+    color: var(--tertiary-color);
 }
 
 header nav {
@@ -59,7 +59,7 @@ background-attachment: fixed;
 
   body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: white;
+    background-color: var(--tertiary-color);
 }
 
 section {
@@ -69,7 +69,7 @@ section {
 
 .section h2{
     font-size: 45px;
-    color: var(--primary-color);
+    color: var(--secondary-color);
 }
 
   .section--title {
@@ -123,13 +123,16 @@ align-items: center;
     margin-left: 210px;
     margin-right: 40px;
     position: relative;
+    border: var(--primary-color) 15px solid;
 }
 
 .section--container__img-text {
     position: absolute;
-    top: 75%;
-    left: 10%;
-    color: white;
+    top: 55%;
+    left: 0%;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    padding: 15px;
 }
 
 .section--container__img2 {
@@ -140,6 +143,7 @@ align-items: center;
     margin-left: auto;
     margin-right: auto;
     position: relative;
+    border: var(--primary-color) 15px solid;
 }
 
 .section--container__img3 {
@@ -150,6 +154,7 @@ align-items: center;
     margin-left: auto;
     margin-right: auto;
     position: relative;
+    border: var(--primary-color) 15px solid;
 }
 
 .section--container {
