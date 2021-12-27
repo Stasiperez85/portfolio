@@ -5,7 +5,6 @@
   }
 
 /* Header / Nave bar styles start */
-
 header {
     padding: 20px 35px;
     background-color: var(--secondary-color);
@@ -34,7 +33,7 @@ header nav ul li {
 }
 
 header nav ul li a {
-    margin: 0 30px;
+    padding: 10px 15px;
     font-weight: lighter;
     font-size: 22px;
   }
@@ -56,6 +55,7 @@ background-size: cover;
 background-position: center center; 
 background-repeat: no-repeat;
 background-attachment: fixed;
+align-items: flex-start;
 }
 
   /* body */
@@ -85,11 +85,15 @@ section {
 
 /* About me */
 .section--info1 {
-    align-items: center;
+     display: flex;
+     justify-content: center;
+     flex-wrap: wrap;
+     align-items: flex-start;
      line-height: 1.7;
       flex-basis: 75%;
       font-size: 20px;
       margin-left: 25px;
+
 }
 
 .section img {
@@ -158,6 +162,7 @@ section {
       font-size: 20px;
       margin-left: 15px;
       margin-top: 150px;
+      flex: 0 100%;
     }
 
 .section--info ul {
