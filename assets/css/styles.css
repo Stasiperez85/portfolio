@@ -4,11 +4,6 @@
     --tertiary-color: white;
   }
 
-/* * {
-    margin: 0;
-    padding: 0;
-} */
-
 /* Header / Nave bar styles start */
 
 header {
@@ -50,8 +45,9 @@ header nav ul li a:hover {
     border-radius: 15px;
     text-shadow: none;
 }
+/* Header / Nav bar styles end */
 
-/* Hero Style Start*/
+/* Hero Style*/
 .hero {
 background-image: url("../Profile.jpeg");
 width: 100vw;
@@ -88,29 +84,12 @@ section {
 
 
 /* About me */
-.section--info {
-align-items: center;
- line-height: 1.7;
-  flex-basis: 75%;
-  font-size: 20px;
-  margin-left: 15px;
-  margin-top: 150px;
-}
-
 .section--info1 {
     align-items: center;
      line-height: 1.7;
       flex-basis: 75%;
       font-size: 20px;
       margin-left: 25px;
-}
-
-.section--info ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    list-style: none;
-    margin-bottom: 150px;
 }
 
 .section img {
@@ -171,7 +150,37 @@ align-items: center;
     margin-top: 100px;
 }
 
+/* Contact Me Section */
+.section--info {
+    align-items: center;
+     line-height: 1.7;
+      flex-basis: 75%;
+      font-size: 20px;
+      margin-left: 15px;
+      margin-top: 150px;
+    }
 
+.section--info ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+    margin-bottom: 150px;
+}
+
+/* Footer Section */
+footer{
+    padding: 20px 35px;
+    background-color: var(--secondary-color);
+}
+
+footer h4 {
+    font-weight: bold;
+    font-size: 20px;
+    color: var(--tertiary-color);
+    margin: 0;
+    text-align: center;
+}
 
 
 
