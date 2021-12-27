@@ -44,6 +44,13 @@ header nav ul li a {
     font-size: 22px;
   }
 
+header nav ul li a:hover {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    border-radius: 15px;
+    text-shadow: none;
+}
+
 /* Hero Style Start*/
 .hero {
 background-image: url("../Profile.jpeg");
