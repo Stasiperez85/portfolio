@@ -4,10 +4,21 @@
     --tertiary-color: white;
   }
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 /* Header / Nave bar styles start */
 header {
     padding: 20px 35px;
     background-color: var(--secondary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky; 
+    top: 0;
+    z-index: 5;
 }
 
 header h1 {
@@ -15,7 +26,6 @@ header h1 {
     font-size: 36px;
     color: var(--tertiary-color);
     margin: 0;
-    display: inline;
 }
 
 header a {
@@ -24,7 +34,7 @@ header a {
 }
 
 header nav {
-    float: right;
+    /* float: right; */
     margin: 0 0;
 }
 
@@ -52,9 +62,9 @@ background-image: url("../Profile.jpeg");
 width: 100vw;
 height: 35vh;
 background-size: cover;
-background-position: center center; 
+background-position: center; 
 background-repeat: no-repeat;
-background-attachment: fixed;
+background-attachment: inherit;
 align-items: flex-start;
 }
 
@@ -187,5 +197,52 @@ footer h4 {
     text-align: center;
 }
 
+/* MEDIA QUERY */
+@media screen and (max-width: 576px) {
+    .section--container__img-large {
+        background-image: url(../istock_65177049_medium.jpeg);
+        width: 100%;
+        height: 300px;
+        display: block;
+        margin-left: 0;
+        margin-right: 0;
+        position: relative;
+        border: var(--primary-color) 15px solid;
+    }  
 
+    .section--container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+        margin-top: 100px;
+        flex-basis: 100%;
+    }
 
+    section {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .section--title {
+        flex-basis: 20%;
+        text-align: center;
+        padding-right: 0;
+        border-right: none;
+    }
+  
+    header {
+        padding: 20px 35px;
+        background-color: var(--secondary-color);
+        display: flex;
+        flex-direction: column;
+    }
+
+    header nav ul li a {
+        padding: 10px 15px;
+        font-weight: lighter;
+        font-size: 17px;
+      }
+}
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
